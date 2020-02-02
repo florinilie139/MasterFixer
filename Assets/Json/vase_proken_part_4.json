@@ -1,0 +1,52 @@
+{
+  "ingredients": [],
+  "tools": [
+    {
+      "name": "hammer",
+      "image": "Assets/Sprites/hammer.png"
+    },
+    {
+      "name": "glue",
+      "image": "Assets/Sprites/glue.png"
+    }
+  ],
+  "initial": 1,
+  "final": 0,
+  "states": [
+    {
+      "id": 0,
+      "image": "Assets/Sprites/vase_broken_2_plunger.png",
+      "allow_tool_id": [
+        "glue"
+      ],
+      "crit_tool_id": []
+    },
+    {
+      "id": 1,
+      "image": "Assets/Sprites/vase_broken_3_plunger.png",
+      "allow_tool_id": [
+        "glue"
+      ],
+      "crit_tool_id": [
+        "hammer"
+      ],
+      "jsonToLoad": "Assets/Json/vase_proken_part_3.json"
+    },
+    {
+      "id": 2,
+      "image": "Assets/Sprites/vase_broken_5.png",
+      "allow_tool_id": [
+        "glue"
+      ],
+      "crit_tool_id": [
+        "hammer"
+      ],
+      "jsonToLoad": "Assets/Json/vase_proken_part_3.json"
+    },
+    {
+      "id": 4,
+      "image": "Assets/Sprites/vase_broken_5.png",
+      "crit_tool_image": "Assets/Sprites/vase_broken.png"
+    }
+  ]
+}

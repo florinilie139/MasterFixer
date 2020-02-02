@@ -1,0 +1,77 @@
+{
+  "ingredients": [],
+  "tools": [
+    {
+      "name": "hammer",
+      "image": "Assets/Sprites/hammer.png"
+    },
+    {
+      "name": "glue",
+      "image": "Assets/Sprites/glue.png"
+    },
+    {
+      "name": "Sand",
+      "image": "Assets/Sprites/plunger.png"
+    }
+  ],
+  "initial": 5,
+  "final": 0,
+  "states": [
+    {
+      "id": 0,
+      "image": "Assets/Sprites/vase_broken_2.png",
+      "allow_tool_id": [
+        "glue"
+      ],
+      "crit_tool_id": [
+        "Plunger"
+      ],
+      "jsonToLoad": "Assets/Json/vase_proken_part_4.json"
+    },
+    {
+      "id": 1,
+      "image": "Assets/Sprites/time_broken_3.png"
+    },
+    {
+      "id": 2,
+      "image": "Assets/Sprites/time_broken_1.png",
+	  "crit_tool_id": [
+        "hammer"
+      ],
+	  "jsonToLoad": "Assets/Json/time_broken_part_2.json"
+    },
+    {
+      "id": 3,
+      "image": "Assets/Sprites/time_broken_1.png",
+      "allow_tool_id": [
+        "Sand","glue"
+      ],
+      "crit_tool_id": [
+        "hammer"
+      ],
+      "jsonToLoad": "Assets/Json/time_broken_part_2.json"
+    },
+    {
+      "id": 4,
+      "image": "Assets/Sprites/time_broken_3.png",
+      "allow_tool_id": [
+        "glue"
+      ],
+      "crit_tool_id": [
+        "Sand"
+      ],
+      "jsonToLoad": "Assets/Json/vase_proken_part_2.json"
+    },
+    {
+      "id": 5,
+      "image": "Assets/Sprites/time_broken_3.png",
+      "allow_tool_id": [
+        "glue"
+      ],
+      "crit_tool_id": [
+        "Plunger"
+      ],
+      "jsonToLoad": "time_broken_3.png"
+    }
+  ]
+}

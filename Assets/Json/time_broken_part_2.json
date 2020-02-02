@@ -1,0 +1,45 @@
+{
+  "ingredients": [],
+  "tools": [
+    {
+      "name": "hammer",
+      "image": "Assets/Sprites/hammer.png"
+    },
+    {
+      "name": "glue",
+      "image": "Assets/Sprites/glue.png"
+    }
+
+  ],
+  "initial": 2,
+  "final": 0,
+  "states": [
+    {
+      "id": 0,
+      "image": "Assets/Sprites/time_broken_2.png",
+      "crit_tool_id": [
+        "hammer"
+      ],
+      "jsonToLoad": "Assets/Json/time_broken.json"
+    },
+    {
+      "id": 1,
+      "image": "Assets/Sprites/time_broken_4.png",
+      "allow_tool_id": [
+        "hammer"
+      ]
+    }
+	,
+    {
+      "id": 2,
+      "image": "Assets/Sprites/time_broken_3.png",
+      "allow_tool_id": [
+        "glue"
+      ],
+      "crit_tool_id": [
+        "Plunger"
+      ],
+      "jsonToLoad": "time_broken_3.png"
+    }
+  ]
+}

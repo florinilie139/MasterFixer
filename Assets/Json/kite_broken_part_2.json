@@ -1,0 +1,62 @@
+{
+  "ingredients": [],
+  "tools": [
+    {
+      "name": "hammer",
+      "image": "Assets/Sprites/hammer.png"
+    },
+    {
+      "name": "string",
+      "image": "Assets/Sprites/string.png"
+    },
+    {
+      "name": "wing1",
+      "image": "Assets/Sprites/kite_broken_part_2.png"
+    }
+  ],
+  "initial": 3,
+  "final": 0,
+  "states": [
+    {
+      "id": 0,
+      "image": "Assets/Sprites/vase_broken_2.png",
+      "allow_tool_id": [
+        "hammer"
+      ],
+      "crit_tool_id": [
+        "Plunger"
+      ],
+      "jsonToLoad": "Assets/Json/vase_proken_part_4.json"
+    },
+    {
+      "id": 1,
+      "image": "Assets/Sprites/kite_broken_part_3.png",
+      "crit_tool_id": [
+        "wing1"
+      ],
+      "jsonToLoad": "Assets/Json/kite_broken_part_3.json"
+    },
+    {
+      "id": 2,
+      "image": "Assets/Sprites/kite_broken_part_3.png",
+	  "allow_tool_id": [
+        "string"
+      ],
+	   "crit_tool_id": [
+        "hammer"
+      ],
+      "jsonToLoad": "Assets/Json/kite_broken.json"
+    },
+    {
+      "id": 3,
+      "image": "",
+      "allow_tool_id": [
+        "hammer","glue"
+      ],
+      "crit_tool_id": [
+        "Sand"
+      ],
+      "jsonToLoad": "Assets/Json/time_broken_part_2.json"
+    }
+  ]
+}
